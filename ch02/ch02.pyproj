@@ -1,0 +1,179 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>66068973-0ec4-4535-9087-8b66f0829e38</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>ch02.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>ch02</Name>
+    <RootNamespace>ch02</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ch02.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ch02.ipynb" />
+    <Content Include="movielens\movies.dat" />
+    <Content Include="movielens\ratings.dat" />
+    <Content Include="movielens\README" />
+    <Content Include="movielens\users.dat" />
+    <Content Include="names\NationalReadMe.pdf" />
+    <Content Include="names\yob1880.txt" />
+    <Content Include="names\yob1881.txt" />
+    <Content Include="names\yob1882.txt" />
+    <Content Include="names\yob1883.txt" />
+    <Content Include="names\yob1884.txt" />
+    <Content Include="names\yob1885.txt" />
+    <Content Include="names\yob1886.txt" />
+    <Content Include="names\yob1887.txt" />
+    <Content Include="names\yob1888.txt" />
+    <Content Include="names\yob1889.txt" />
+    <Content Include="names\yob1890.txt" />
+    <Content Include="names\yob1891.txt" />
+    <Content Include="names\yob1892.txt" />
+    <Content Include="names\yob1893.txt" />
+    <Content Include="names\yob1894.txt" />
+    <Content Include="names\yob1895.txt" />
+    <Content Include="names\yob1896.txt" />
+    <Content Include="names\yob1897.txt" />
+    <Content Include="names\yob1898.txt" />
+    <Content Include="names\yob1899.txt" />
+    <Content Include="names\yob1900.txt" />
+    <Content Include="names\yob1901.txt" />
+    <Content Include="names\yob1902.txt" />
+    <Content Include="names\yob1903.txt" />
+    <Content Include="names\yob1904.txt" />
+    <Content Include="names\yob1905.txt" />
+    <Content Include="names\yob1906.txt" />
+    <Content Include="names\yob1907.txt" />
+    <Content Include="names\yob1908.txt" />
+    <Content Include="names\yob1909.txt" />
+    <Content Include="names\yob1910.txt" />
+    <Content Include="names\yob1911.txt" />
+    <Content Include="names\yob1912.txt" />
+    <Content Include="names\yob1913.txt" />
+    <Content Include="names\yob1914.txt" />
+    <Content Include="names\yob1915.txt" />
+    <Content Include="names\yob1916.txt" />
+    <Content Include="names\yob1917.txt" />
+    <Content Include="names\yob1918.txt" />
+    <Content Include="names\yob1919.txt" />
+    <Content Include="names\yob1920.txt" />
+    <Content Include="names\yob1921.txt" />
+    <Content Include="names\yob1922.txt" />
+    <Content Include="names\yob1923.txt" />
+    <Content Include="names\yob1924.txt" />
+    <Content Include="names\yob1925.txt" />
+    <Content Include="names\yob1926.txt" />
+    <Content Include="names\yob1927.txt" />
+    <Content Include="names\yob1928.txt" />
+    <Content Include="names\yob1929.txt" />
+    <Content Include="names\yob1930.txt" />
+    <Content Include="names\yob1931.txt" />
+    <Content Include="names\yob1932.txt" />
+    <Content Include="names\yob1933.txt" />
+    <Content Include="names\yob1934.txt" />
+    <Content Include="names\yob1935.txt" />
+    <Content Include="names\yob1936.txt" />
+    <Content Include="names\yob1937.txt" />
+    <Content Include="names\yob1938.txt" />
+    <Content Include="names\yob1939.txt" />
+    <Content Include="names\yob1940.txt" />
+    <Content Include="names\yob1941.txt" />
+    <Content Include="names\yob1942.txt" />
+    <Content Include="names\yob1943.txt" />
+    <Content Include="names\yob1944.txt" />
+    <Content Include="names\yob1945.txt" />
+    <Content Include="names\yob1946.txt" />
+    <Content Include="names\yob1947.txt" />
+    <Content Include="names\yob1948.txt" />
+    <Content Include="names\yob1949.txt" />
+    <Content Include="names\yob1950.txt" />
+    <Content Include="names\yob1951.txt" />
+    <Content Include="names\yob1952.txt" />
+    <Content Include="names\yob1953.txt" />
+    <Content Include="names\yob1954.txt" />
+    <Content Include="names\yob1955.txt" />
+    <Content Include="names\yob1956.txt" />
+    <Content Include="names\yob1957.txt" />
+    <Content Include="names\yob1958.txt" />
+    <Content Include="names\yob1959.txt" />
+    <Content Include="names\yob1960.txt" />
+    <Content Include="names\yob1961.txt" />
+    <Content Include="names\yob1962.txt" />
+    <Content Include="names\yob1963.txt" />
+    <Content Include="names\yob1964.txt" />
+    <Content Include="names\yob1965.txt" />
+    <Content Include="names\yob1966.txt" />
+    <Content Include="names\yob1967.txt" />
+    <Content Include="names\yob1968.txt" />
+    <Content Include="names\yob1969.txt" />
+    <Content Include="names\yob1970.txt" />
+    <Content Include="names\yob1971.txt" />
+    <Content Include="names\yob1972.txt" />
+    <Content Include="names\yob1973.txt" />
+    <Content Include="names\yob1974.txt" />
+    <Content Include="names\yob1975.txt" />
+    <Content Include="names\yob1976.txt" />
+    <Content Include="names\yob1977.txt" />
+    <Content Include="names\yob1978.txt" />
+    <Content Include="names\yob1979.txt" />
+    <Content Include="names\yob1980.txt" />
+    <Content Include="names\yob1981.txt" />
+    <Content Include="names\yob1982.txt" />
+    <Content Include="names\yob1983.txt" />
+    <Content Include="names\yob1984.txt" />
+    <Content Include="names\yob1985.txt" />
+    <Content Include="names\yob1986.txt" />
+    <Content Include="names\yob1987.txt" />
+    <Content Include="names\yob1988.txt" />
+    <Content Include="names\yob1989.txt" />
+    <Content Include="names\yob1990.txt" />
+    <Content Include="names\yob1991.txt" />
+    <Content Include="names\yob1992.txt" />
+    <Content Include="names\yob1993.txt" />
+    <Content Include="names\yob1994.txt" />
+    <Content Include="names\yob1995.txt" />
+    <Content Include="names\yob1996.txt" />
+    <Content Include="names\yob1997.txt" />
+    <Content Include="names\yob1998.txt" />
+    <Content Include="names\yob1999.txt" />
+    <Content Include="names\yob2000.txt" />
+    <Content Include="names\yob2001.txt" />
+    <Content Include="names\yob2002.txt" />
+    <Content Include="names\yob2003.txt" />
+    <Content Include="names\yob2004.txt" />
+    <Content Include="names\yob2005.txt" />
+    <Content Include="names\yob2006.txt" />
+    <Content Include="names\yob2007.txt" />
+    <Content Include="names\yob2008.txt" />
+    <Content Include="names\yob2009.txt" />
+    <Content Include="names\yob2010.txt" />
+    <Content Include="usagov_bitly_data2012-03-16-1331923249.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="movielens\" />
+    <Folder Include="names\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
