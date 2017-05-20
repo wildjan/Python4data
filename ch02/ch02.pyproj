@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>66068973-0ec4-4535-9087-8b66f0829e38</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>ch02.py</StartupFile>
+    <StartupFile>names.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="ch02.py" />
+    <Compile Include="movies.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="names.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="ch02.ipynb" />
