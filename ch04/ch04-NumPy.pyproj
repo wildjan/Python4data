@@ -2,15 +2,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>98d798f8-c7e5-4fd4-a8de-f25a230acd35</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
-    <StartupFile>ch03.py</StartupFile>
+    <ProjectGuid>deb1c713-5b5a-4eb1-b8ee-16d2c3df17e5</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>ch04.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>ch03</Name>
-    <RootNamespace>ch03</RootNamespace>
+    <Name>ch04-NumPy</Name>
+    <RootNamespace>ch04</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,10 +22,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ch03.py" />
+    <Compile Include="ch04.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="stinkbug.png" />
+    <Content Include="array_ex.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
