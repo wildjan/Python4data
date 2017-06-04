@@ -1,5 +1,5 @@
-from __future__ import division
 # coding: utf-8
+from __future__ import division
 
 # # Introductory examples
 
@@ -7,8 +7,11 @@ from __future__ import division
 
 
 # In[ ]:
+from IPython import get_ipython
+ipython_shell = get_ipython()
 
 get_ipython().magic(u'pwd')
+get_ipython().magic('matplotlib inline')
 
 
 # In[ ]:

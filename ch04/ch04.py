@@ -307,7 +307,7 @@ names != 'Bob'
 
 # In[ ]:
 
-data[-(names == 'Bob')]
+data[~(names == 'Bob')]
 
 
 # In[ ]:
@@ -507,32 +507,32 @@ np.where(arr > 0, 2, arr) # set only positive values to 2
 
 # Not to be executed
 
-result = []
-for i in range(n):
-    if cond1[i] and cond2[i]:
-        result.append(0)
-    elif cond1[i]:
-        result.append(1)
-    elif cond2[i]:
-        result.append(2)
-    else:
-        result.append(3)
+#result = []
+#for i in range(n):
+#    if cond1[i] and cond2[i]:
+#        result.append(0)
+#    elif cond1[i]:
+#        result.append(1)
+#    elif cond2[i]:
+#        result.append(2)
+#    else:
+#        result.append(3)
 
 
 # In[ ]:
 
 # Not to be executed
 
-np.where(cond1 & cond2, 0,
-         np.where(cond1, 1,
-                  np.where(cond2, 2, 3)))
+#np.where(cond1 & cond2, 0,
+#         np.where(cond1, 1,
+#                  np.where(cond2, 2, 3)))
 
 
 # In[ ]:
 
 # Not to be executed
 
-result = 1 * cond1 + 2 * cond2 + 3 * -(cond1 | cond2)
+#result = 1 * cond1 + 2 * cond2 + 3 * -(cond1 | cond2)
 
 
 # ### Mathematical and statistical methods
@@ -687,10 +687,10 @@ arr
 
 x = np.array([[1., 2., 3.], [4., 5., 6.]])
 y = np.array([[6., 23.], [-1, 7], [8, 9]])
-x
-y
-x.dot(y)  # equivalently np.dot(x, y)
-
+print "x =\n", x
+print "y =\n", y
+z = x.dot(y)  # equivalently np.dot(x, y)
+print "x . y =\n", z
 
 # In[ ]:
 
@@ -712,6 +712,15 @@ mat.dot(inv(mat))
 q, r = qr(mat)
 r
 
+# In[ ]:
+
+from numpy.linalg import solve
+
+A = [[1,1],[1, -1]]
+b = [2, 0]
+
+x = solve(A, b)
+x
 
 # ## Random number generation
 
@@ -742,6 +751,9 @@ for i in xrange(steps):
     step = 1 if random.randint(0, 1) else -1
     position += step
     walk.append(position)
+
+plt.plot(walk)
+
 # In[ ]:
 
 np.random.seed(12345)
@@ -753,7 +765,7 @@ nsteps = 1000
 draws = np.random.randint(0, 2, size=nsteps)
 steps = np.where(draws > 0, 1, -1)
 walk = steps.cumsum()
-
+plt.plot(walk)
 
 # In[ ]:
 
@@ -780,9 +792,12 @@ walks
 
 # In[ ]:
 
-walks.max()
-walks.min()
-
+means = np.mean(walks, axis=1)
+print walks.shape
+print means
+print walks.max()
+print walks.min()
+plt.hist(means, bins=30)
 
 # In[ ]:
 
@@ -795,7 +810,8 @@ hits30.sum() # Number that hit 30 or -30
 
 crossing_times = (np.abs(walks[hits30]) >= 30).argmax(1)
 crossing_times.mean()
-
+crossing_times
+plt.hist(crossing_times)
 
 # In[ ]:
 
