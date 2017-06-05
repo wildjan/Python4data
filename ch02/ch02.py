@@ -13,19 +13,23 @@ get_ipython().magic(u'pwd')
 
 # In[ ]:
 
-path = 'usagov_bitly_data2012-03-16-1331923249.txt'
+import os
 
+path =  r'C:\\Users\\jwild\\Source\\Repos\\Python4data\\ch02'
+os.chdir(path)
+
+fname = 'usagov_bitly_data2012-03-16-1331923249.txt'
 
 # In[ ]:
 
-open(path).readline()
+open(fname).readline()
 
 
 # In[ ]:
 
 import json
-path = 'usagov_bitly_data2012-03-16-1331923249.txt'
-records = [json.loads(line) for line in open(path)]
+fname = r'C:\Users\jwild\Source\Repos\Python4data\ch02\usagov_bitly_data2012-03-16-1331923249.txt'
+records = [json.loads(line) for line in open(fname)]
 
 
 # In[ ]:
@@ -54,7 +58,6 @@ time_zones = [rec['tz'] for rec in records]
 
 time_zones = [rec['tz'] for rec in records if 'tz' in rec]
 
-
 # In[ ]:
 
 time_zones[:10]
@@ -68,6 +71,7 @@ def get_counts(sequence):
         counts[elm] = counts.get(elm, 0) + 1
     return counts
 
+get_counts(time_zones)
 
 # In[ ]:
 
@@ -128,8 +132,8 @@ counts.most_common(10)
 
 # In[ ]:
 
-#from __future__ import division
-#from numpy.random import randn
+from __future__ import division
+from numpy.random import randn
 import numpy as np
 import os
 import matplotlib.pyplot as plt
@@ -141,8 +145,9 @@ np.set_printoptions(precision=4)
 # In[ ]:
 
 import json
-path = 'usagov_bitly_data2012-03-16-1331923249.txt'
-lines = open(path).readlines()
+
+fname = 'usagov_bitly_data2012-03-16-1331923249.txt'
+lines = open(fname).readlines()
 records = [json.loads(line) for line in lines]
 
 

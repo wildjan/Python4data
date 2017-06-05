@@ -12,6 +12,7 @@
     <OutputPath>.</OutputPath>
     <Name>ch03-IPython</Name>
     <RootNamespace>ch03</RootNamespace>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda27-64</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -26,6 +27,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="stinkbug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda27-64" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

@@ -12,6 +12,7 @@
     <OutputPath>.</OutputPath>
     <Name>ch04-NumPy</Name>
     <RootNamespace>ch04</RootNamespace>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda27-64</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -26,6 +27,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="array_ex.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda27-64" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

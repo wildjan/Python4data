@@ -5,14 +5,14 @@
     <ProjectGuid>66068973-0ec4-4535-9087-8b66f0829e38</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>ch02.py</StartupFile>
+    <StartupFile>names.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>ch02-Introductory</Name>
     <RootNamespace>ch02</RootNamespace>
-    <InterpreterId>Global|PythonCore|2.7-32</InterpreterId>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda27-64</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -176,7 +176,7 @@
     <Folder Include="names\" />
   </ItemGroup>
   <ItemGroup>
-    <InterpreterReference Include="Global|PythonCore|2.7-32" />
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda27-64" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

@@ -1,6 +1,7 @@
 # coding: utf-8
-#from __future__ import division
-#from IPython.core.getipython import get_ipython
+from __future__ import division
+from IPython import get_ipython
+from backports.shutil_get_terminal_size import get_terminal_size as _get_terminal_size
 
 # # NumPy Basics: Arrays and Vectorized Computation
 
@@ -54,13 +55,20 @@ arr2
 
 # In[ ]:
 
-display("arr2 dimension", arr2.ndim)
+arr2.ndim
+
+# In[ ]:
+
 arr2.shape
 
 
 # In[ ]:
 
-display(arr1.dtype, arr2.dtype)
+arr1.dtype
+
+# In[ ]:
+
+arr2.dtype
 
 
 # In[ ]:
