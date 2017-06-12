@@ -1,6 +1,6 @@
 # coding: utf-8
-#from __future__ import division
-#from IPython.core.getipython import get_ipython
+from __future__ import division
+from IPython import get_ipython
 
 # # NumPy Basics: Arrays and Vectorized Computation
 
@@ -54,14 +54,20 @@ arr2
 
 # In[ ]:
 
-display("arr2 dimension", arr2.ndim)
+arr2.ndim
+
+# In[ ]:
+
 arr2.shape
 
 
 # In[ ]:
 
-display(arr1.dtype, arr2.dtype)
+arr1.dtype
 
+# In[ ]:
+
+arr2.dtype
 
 # In[ ]:
 
@@ -74,7 +80,6 @@ np.zeros((3, 6))
 # In[ ]:
 
 np.empty((2, 3, 2))
-
 
 # In[ ]:
 
@@ -115,12 +120,10 @@ arr
 
 arr.astype(np.int32)
 
-
 # In[ ]:
 
 numeric_strings = np.array(['1.25', '-9.6', '42'], dtype=np.string_)
 numeric_strings.astype(float)
-
 
 # In[ ]:
 
@@ -128,12 +131,10 @@ int_array = np.arange(10)
 calibers = np.array([.22, .270, .357, .380, .44, .50], dtype=np.float64)
 int_array.astype(calibers.dtype)
 
-
 # In[ ]:
 
 empty_uint32 = np.empty(8, dtype='u4')
 empty_uint32
-
 
 # ### Operations between arrays and scalars
 
@@ -209,11 +210,9 @@ arr2d[0, 2]
 arr3d = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
 arr3d
 
-
 # In[ ]:
 
 arr3d[0]
-
 
 # In[ ]:
 
@@ -238,11 +237,9 @@ arr3d[1, 0]
 
 arr[1:6]
 
-
 # In[ ]:
 
 arr2d
-
 
 # In[ ]:
 
@@ -252,7 +249,6 @@ arr2d[:2]
 
 arr2d[:2, 1:]
 
-
 # In[ ]:
 
 arr2d[1, :2]
@@ -261,16 +257,14 @@ arr2d[1, :2]
 
 arr2d[2, :1]
 
-
 # In[ ]:
 
 arr2d[:, :1]
 
-
 # In[ ]:
 
 arr2d[:2, 1:] = 0
-
+arr2d
 
 # ### Boolean indexing
 
@@ -309,7 +303,6 @@ names != 'Bob'
 
 data[~(names == 'Bob')]
 
-
 # In[ ]:
 
 mask = (names == 'Bob') | (names == 'Will')
@@ -324,12 +317,10 @@ data[mask]
 data[data < 0] = 0
 data
 
-
 # In[ ]:
 
 data[names != 'Joe'] = 7
 data
-
 
 # ### Fancy indexing
 
@@ -348,7 +339,6 @@ arr[[4, 3, 0, 6]]
 
 arr[[-3, -5, -7]]
 
-
 # In[ ]:
 
 # more on reshape in Chapter 12
@@ -359,10 +349,13 @@ arr
 
 arr[[1, 5, 7, 2], [0, 3, 1, 2]]
 
-
 # In[ ]:
 
 arr[[1, 5, 7, 2]][:, [0, 3, 1, 2]]
+
+# In[ ]:
+
+arr
 
 # In[ ]:
 
@@ -392,7 +385,6 @@ np.dot(arr.T, arr)
 arr = np.arange(16).reshape((2, 2, 4))
 arr
 arr.transpose((1, 0, 2))
-
 
 # In[ ]:
 
@@ -439,7 +431,6 @@ arr
 
 np.modf(arr)
 
-
 # ## Data processing using arrays
 
 # In[ ]:
@@ -448,11 +439,9 @@ points = np.arange(-5, 5, 0.01) # 1000 equally spaced points
 xs, ys = np.meshgrid(points, points)
 ys
 
-
 # In[ ]:
 
 from matplotlib.pyplot import imshow, title
-
 
 # In[ ]:
 
@@ -462,11 +451,9 @@ z
 plt.imshow(z, cmap=plt.cm.gray); plt.colorbar()
 plt.title("Image plot of $\sqrt{x^2 + y^2}$ for a grid of values")
 
-
 # In[ ]:
 
 plt.draw()
-
 
 # ### Expressing conditional logic as array operations
 
@@ -476,19 +463,16 @@ xarr = np.array([1.1, 1.2, 1.3, 1.4, 1.5])
 yarr = np.array([2.1, 2.2, 2.3, 2.4, 2.5])
 cond = np.array([True, False, True, True, False])
 
-
 # In[ ]:
 
 result = [(x if c else y)
           for x, y, c in zip(xarr, yarr, cond)]
 result
 
-
 # In[ ]:
 
 result = np.where(cond, xarr, yarr)
 result
-
 
 # In[ ]:
 

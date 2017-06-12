@@ -16,6 +16,11 @@ print 'Largest one we saw: %s' % np.max(some_results)
 
 # In[ ]:
 import matplotlib.pyplot as plt
+import os
+
+path =  r'C:\\Users\\jwild\\Source\\Repos\\Python4data\\ch03'
+os.chdir(path)
+
 img = plt.imread("stinkbug.png")
 figure(figsize(8,8))
 plt.imshow(img)

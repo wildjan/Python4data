@@ -5,7 +5,7 @@
     <ProjectGuid>66068973-0ec4-4535-9087-8b66f0829e38</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>ch02.py</StartupFile>
+    <StartupFile>names.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>

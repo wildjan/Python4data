@@ -2,11 +2,18 @@
 
 # In[ ]:
 
-#from __future__ import division
+from __future__ import division
+from IPython.core.getipython import get_ipython
 from numpy.random import randn
 from IPython.core.magics import config
 import numpy as np
 import matplotlib.pyplot as plt
+import os
+
+path =  r'C:\\Users\\jwild\\Source\\Repos\\Python4data\\ch02'
+os.chdir(path)
+
+
 plt.rc('figure', figsize=(12, 5))
 np.set_printoptions(precision=4)
 get_ipython().magic(u'pwd')
@@ -16,14 +23,13 @@ get_ipython().magic(u'pwd')
 
 # In[ ]:
 
-#get_ipython().system(u'more names\\yob1880.txt')
+get_ipython().system(u'more names\\yob1880.txt')
 
 # In[ ]:
 
 import pandas as pd
-names1880 = pd.read_csv('names/yob1880.txt', names=['name', 'sex', 'births'])
+names1880 = pd.read_csv('names//yob1880.txt', names=['name', 'sex', 'births'])
 names1880
-
 
 # In[ ]:
 
@@ -118,6 +124,7 @@ top1000
 boys = top1000[top1000.sex == 'M']
 girls = top1000[top1000.sex == 'F']
 
+boys
 
 # In[ ]:
 
@@ -171,17 +178,6 @@ df = boys[boys.year == 1900]
 in1900 = df.sort_values(by='prop', ascending=False).prop.cumsum()
 in1900.values.searchsorted(0.5) + 1
 
-
-# In[ ]:
-
-def get_quantile_count(group, q=0.5):
-    group = group.sort_values(by='prop', ascending=False)
-    return group.prop.cumsum().values.searchsorted(q) + 1
-
-diversity = top1000.groupby(['year', 'sex']).apply(get_quantile_count)
-diversity = diversity.unstack('sex')
-
-
 # In[ ]:
 
 def get_quantile_count(group, q=0.5):
@@ -224,7 +220,7 @@ subtable.sum()
 # In[ ]:
 
 letter_prop = subtable / subtable.sum().astype(float)
-
+letter_prop
 
 # In[ ]:
 

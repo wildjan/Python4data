@@ -5,6 +5,9 @@
 import pandas as pd
 import os
 
+path =  r'C:\\Users\\jwild\\Source\\Repos\\Python4data\\ch02'
+os.chdir(path)
+
 upath = os.path.expanduser('movielens/users.dat')
 rpath = os.path.expanduser('movielens/ratings.dat')
 mpath = os.path.expanduser('movielens/movies.dat')
@@ -90,7 +93,7 @@ mean_ratings = mean_ratings.rename(index={'Seven Samurai (The Magnificent Seven)
 
 # In[ ]:
 
-top_female_ratings = mean_ratings.sort_index(by='F', ascending=False)
+top_female_ratings = mean_ratings.sort_values(by='F', ascending=False)
 top_female_ratings[:10]
 
 
@@ -103,7 +106,7 @@ mean_ratings['diff'] = mean_ratings['M'] - mean_ratings['F']
 
 # In[ ]:
 
-sorted_by_diff = mean_ratings.sort_index(by='diff')
+sorted_by_diff = mean_ratings.sort_values(by='diff')
 sorted_by_diff[:15]
 
 
@@ -120,6 +123,6 @@ rating_std_by_title = data.groupby('title')['rating'].std()
 # Filter down to active_titles
 rating_std_by_title = rating_std_by_title.ix[active_titles]
 # Order Series by value in descending order
-rating_std_by_title.order(ascending=False)[:10]
+rating_std_by_title.sort_values(ascending=False)[:10]
 
 
