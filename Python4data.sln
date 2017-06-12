@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ch02-Introductory", "ch02\ch02-Introductory.pyproj", "{66068973-0EC4-4535-9087-8B66F0829E38}"
 EndProject
@@ -9,7 +9,7 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ch03-IPython", "ch03\ch03-I
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ch04-NumPy", "ch04\ch04-NumPy.pyproj", "{DEB1C713-5B5A-4EB1-B8EE-16D2C3DF17E5}"
 EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ch05", "ch05\ch05.pyproj", "{633718D5-EA7F-41A0-AA40-525253EED514}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ch05-pandas", "ch05\ch05-pandas.pyproj", "{633718D5-EA7F-41A0-AA40-525253EED514}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
